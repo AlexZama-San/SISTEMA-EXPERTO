@@ -1,10 +1,6 @@
 body{
 background-color: #00da6298;
 }
-#titulo{
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 .card{
     width: 50%;
     height: 100%;
@@ -14,13 +10,41 @@ background-color: #00da6298;
     text-decoration-color: #00000098;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0 auto;
-}
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}   
 .oculto{
     display: none;
 }
 #base{
+    padding: 5px;
     background-color: #ffffff98;
     text-align: center;
     width: 60%;
     margin: 0 auto;
+    border-radius: 10px;
+}
+#titulo{
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+#basetitulo{
+    margin: 0 auto;
+    width: 50%;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#boton{
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 5%;
+}
+.separador{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }

@@ -9,7 +9,14 @@
     
 </head>
 <body>
-    <h1 id="titulo">¿QUE TARJETA GRAFICA ME RECOMIENDA?</h1>
+    <div class="container" id="basetitulo">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="titulo">¿QUE TARJETA GRAFICA ES RECOMENDADA?</h1>
+            </div>
+        </div>
+    </div>
+    <div class="separador"></div> 
     <div class="container" id="base">
         <div class="row">
             <div class="col-md-6">
@@ -66,7 +73,34 @@
                         </div>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>pregunta 4</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4 id="pregunta">¿de cuanto es tu presupuesto?</h4>
+                        <div class="form-group">
+                            <p>
+                            <input type="number" class="btn-radio1" id="respuestapresup" name="procesador"> $
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>pregunta 5</h3>
+                    </div>
+                <div class="card-body">
+                    <h4 id="pregunta">¿cuantos watts es capaz de entregar la fuente de poder de tu PC?</h4>
+                        <div class="form-group">
+                            <p>
+                                <input type="number" class="btn-radio1" id="respuestapresup" name="procesador"> Watts
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <input type="button" class="btn btn-primary" id="boton" value="Enviar">
         </div>
     </div>
 </body>
