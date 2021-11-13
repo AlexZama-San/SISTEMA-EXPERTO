@@ -1,2 +1,3 @@
 1.preguntas
 2.diseño y adaptacion
+3.finalizan las preguntas y colocacion de elementos
