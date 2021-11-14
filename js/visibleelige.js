@@ -1,6 +1,7 @@
 var respuestaPROCE="";
 var select;
 var model;
+var tipo;
 const btnRadio=document.querySelectorAll(".btn-radio1");
 btnRadio.forEach(btn=>{
 btn.addEventListener("change", ()=>{
@@ -28,17 +29,26 @@ else{
 }
 })});
 function decide(){
-var tipo;
+    validacion : {
 const rpradio=document.querySelectorAll(".radio1");
 rpradio.forEach(rp=>{
     if (rp.checked){
         tipo=rp.value;
     }
 });
-console.log(tipo);
 var process=respuestaPROCE;
 var presup=document.getElementById("respuestapresup").value;
-console.log(presup);
 var watts=document.getElementById("respuestawatts").value;
-console.log(watts);
+
+if(tipo == "" || process == "" || presup == "" || watts == ""){
+    alert("Faltan datos");
+    console.log(tipo);
+    console.log(process);
+    console.log(model)
+    console.log(presup);
+    console.log(watts);
+    break validacion;
+}
+console.log("ahora a elegir")
+}
 }
