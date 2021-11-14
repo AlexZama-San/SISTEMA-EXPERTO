@@ -1,3 +1,4 @@
 1.preguntas
 2.diseño y adaptacion
 3.finalizan las preguntas y colocacion de elementos
+4.codigo de seleccion: recoge variables
