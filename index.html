@@ -28,9 +28,9 @@
                         <h4 id="pregunta">¿Para que requieres la tarjeta grafica?</h4>
                         <div class="form-group">
                             <p>
-                            <input type="radio" class="form-control" id="respuesta1" name="RespuestaUSO" value="ofi"> Ofimatica
-                            <input type="radio" class="form-control" id="respuesta2" name="RespuestaUSO" value="VJ"> Videojuegos
-                            <input type="radio" class="form-control" id="respuesta3" name="RespuestaUSO" value="MR"> Modelado y/o Renderizado
+                            <input type="radio" class="radio1" id="respuesta1" name="RespuestaUSO" value="1"> Ofimatica
+                            <input type="radio" class="radio1" id="respuesta1" name="RespuestaUSO" value="2"> Videojuegos
+                            <input type="radio" class="radio1" id="respuesta1" name="RespuestaUSO" value="3"> Modelado y/o Renderizado
                             </p>
                         </div>
                     </div>
@@ -59,16 +59,16 @@
                         <div class="form-group">
                             <select class="oculto" id="listaprocesadoresINTEL">
                                 <option value="1">Selecciona una opcion</option>
-                                <option class="r1" value="2">Intel Core i5</option>
-                                <option class="r1" value="3">Intel Core i7</option>
-                                <option class="r1" value="4">Intel Core i3</option>
+                                <option class="r1" value="i2">Intel Core i5</option>
+                                <option class="r1" value="i3">Intel Core i7</option>
+                                <option class="r1" value="i4">Intel Core i3</option>
                             </select>
                             <select class="oculto" id="listaprocesadoresAMD">
                                 <option value="1">Selecciona una opcion</option>
-                                <option class="r1" value="2">Ryzen 3</option>
-                                <option class="r1" value="3">Ryzen 5</option>
-                                <option class="r1" value="4">Ryzen 7</option>
-                                <option class="r1" value="5">Ryzen 9</option>
+                                <option class="r2" value="a2">Ryzen 3</option>
+                                <option class="r2" value="a3">Ryzen 5</option>
+                                <option class="r2" value="a4">Ryzen 7</option>
+                                <option class="r2" value="a5">Ryzen 9</option>
                             </select>
                         </div>
                     </div>
@@ -94,13 +94,13 @@
                     <h4 id="pregunta">¿cuantos watts es capaz de entregar la fuente de poder de tu PC?</h4>
                         <div class="form-group">
                             <p>
-                                <input type="number" class="btn-radio1" id="respuestapresup" name="procesador"> Watts
+                                <input type="number" class="btn-radio1" id="respuestawatts" name="procesador"> Watts
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <input type="button" class="btn btn-primary" id="botonenvia" value="Enviar">
+            <input type="button" class="btn btn-primary" id="botonenvia" value="Enviar" onclick="decide()">
             <scrpt src="js/eleccion.js"></scrpt>
         </div>
     </div>
