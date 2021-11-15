@@ -50,5 +50,69 @@ if(tipo == "" || process == "" || presup == "" || watts == ""){
     break validacion;
 }
 console.log("ahora a elegir")
+if(presup < 2000 || watts < 400){
+    alert("El presupuesto o los watts de su fuente de poder son muy bajos");
+    break validacion;
+}
+    if(tipo=1){
+        if(process=="Intel"){
+            if(model=="i2" || model=="i3" || model=="i4"){
+                if(presup >= 2000 && presup <= 5000){
+                    if(watts >= 400 && watts <= 600){
+                        document.getElementById("imag").innerHTML='<img src="../img/1030.jpg" id="imagenrecomendacion">te recomendamos la GT 1030';
+                        
+                    }
+                }
+            }
+        }
+        if(process=="AMD"){
+            if(model=="a2" || model=="a3" || model=="a4" || model=="a5"){
+                if(presup >= 2000 && presup <= 5000){
+                    if(watts >= 400 && watts <= 600){
+                        document.getElementById("imag").innerHTML='<img src="../img/1030.jpg" id="imagenrecomendacion">te recomendamos la GT 1030';
+                    }
+                }
+            }
+        }
+        if(process=="Intel"){
+            if(model=="i2" || model=="i3" || model=="i4"){
+                if(presup >= 5000 && presup <= 6000){
+                    if(watts >= 400 && watts <= 600){
+                        document.getElementById("imag").innerHTML='<img src="../img/540.jpg" id="imagenrecomendacion">te recomendamos la RADEON 540';
+                        
+                    }
+                }
+            }
+        }
+        if(process=="AMD"){
+            if(model=="a2" || model=="a3" || model=="a4" || model=="a5"){
+                if(presup >= 5000 && presup <= 6000){
+                    if(watts >= 400 && watts <= 600){
+                        document.getElementById("imag").innerHTML='<img src="../img/540.jpg" id="imagenrecomendacion">te recomendamos la RADEON 540';
+                    }
+                }
+            }
+        }
+        if(process=="Intel"){
+            if(model=="i2" || model=="i3" || model=="i4"){
+                if(presup >= 6000){
+                    if(watts >= 400 && watts <= 600){
+                        document.getElementById("imag").innerHTML='<img src="../img/1050.jpg" id="imagenrecomendacion">te recomendamos la GTX 1050';
+                        
+                    }
+                }
+            }
+        }
+        if(process=="AMD"){
+            if(model=="a2" || model=="a3" || model=="a4" || model=="a5"){
+                if(presup >= 6000){
+                    if(watts >= 400 && watts <= 600){
+                        document.getElementById("imag").innerHTML='<img src="../img/1050.jpg" id="imagenrecomendacion">te recomendamos la GTX 1050';
+                    }
+                }
+            }
+        }
+    }
+document.getElementById("recomendacion").classList.remove("oculto");
 }
 }
