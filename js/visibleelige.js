@@ -118,6 +118,10 @@ if(presup < 2000 || watts < 400){
             }
         }
     }else if(tipo==2){
+        if(presup<6000){
+            alert("el presupuesto establecido no es suficiente para una tarjeta grafica de videojuegos")
+            break validacion;
+        }
         if(process=="Intel"){
             if(model=="i2" || model=="i3" || model=="i4"){
                 if(presup >= 6000 && presup <= 10000){
