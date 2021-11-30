@@ -61,7 +61,7 @@ if(presup < 2000 || watts < 400){
 }
     if(tipo==1){
         if(process=="Intel"){
-            if(model=="i2" || model=="i3" || model=="i4"){
+            if(model=="i2" || model=="i3" || model=="i4" || model =="i5"){
                 if(presup >= 2000 && presup < 5000){
                     if(watts >= 400){
                         document.getElementById("imag").innerHTML='<img src="../img/1030.jpg" id="imagenrecomendacion">te recomendamos la GT 1030';
@@ -80,7 +80,7 @@ if(presup < 2000 || watts < 400){
             }
         }
         if(process=="Intel"){
-            if(model=="i2" || model=="i3" || model=="i4"){
+            if(model=="i2" || model=="i3" || model=="i4" || model =="i5"){
                 if(presup >= 5000 && presup < 6000){
                     if(watts >= 400){
                         document.getElementById("imag").innerHTML='<img src="../img/540.jpg" id="imagenrecomendacion">te recomendamos la RADEON 540';
@@ -99,7 +99,7 @@ if(presup < 2000 || watts < 400){
             }
         }
         if(process=="Intel"){
-            if(model=="i2" || model=="i3" || model=="i4"){
+            if(model=="i2" || model=="i3" || model=="i4" || model =="i5"){
                 if(presup >= 6000){
                     if(watts >= 400){
                         document.getElementById("imag").innerHTML='<img src="../img/1050.jpg" id="imagenrecomendacion">te recomendamos la GTX 1050';
@@ -123,7 +123,7 @@ if(presup < 2000 || watts < 400){
             break validacion;
         }
         if(process=="Intel"){
-            if(model=="i2" || model=="i3" || model=="i4"){
+            if(model=="i2" || model=="i3" || model=="i4" || model =="i5"){
                 if(presup > 6000 && presup < 10000){
                     if(watts >= 400){
                         document.getElementById("imag").innerHTML='<img src="../img/1050.jpg" id="imagenrecomendacion">te recomendamos la GTX 1050';
@@ -146,7 +146,7 @@ if(presup < 2000 || watts < 400){
             }
         }
         if(process=="Intel"){
-            if(model=="i3" || model=="i4"){
+            if(model=="i3" || model=="i4" || model=="i5"){
                 if(presup > 10000 && presup < 30000){
                     if(watts >= 500){
                         document.getElementById("imag").innerHTML='<img src="../img/2060.jpg" id="imagenrecomendacion">te recomendamos la RTX 2060';
@@ -165,7 +165,7 @@ if(presup < 2000 || watts < 400){
             }
         }
         if(process=="Intel"){
-            if(model=="i3" || model=="i4"){
+            if(model=="i3" || model=="i4" || model=="i5"){
                 if(presup > 30000){
                     if(watts >= 600){
                         document.getElementById("imag").innerHTML='<img src="../img/3070.jpg" id="imagenrecomendacion">te recomendamos la RTX 3070';
@@ -179,9 +179,37 @@ if(presup < 2000 || watts < 400){
         if(process=="AMD"){
             if(model=="a3" || model=="a4" || model=="a5"){
                 if(presup > 30000){
-                    if(watts >= 600 && watts <= 800){
+                    if(watts >= 600){
                         document.getElementById("imag").innerHTML='<img src="../img/3070.jpg" id="imagenrecomendacion">te recomendamos la RTX 3070';
                     } else if(watts >=500){
+                        document.getElementById("imag").innerHTML='<img src="../img/2060.jpg" id="imagenrecomendacion">te recomendamos la RTX 2060';
+                    } else document.getElementById("imag").innerHTML='<img src="../img/1050.jpg" id="imagenrecomendacion">te recomendamos la GTX 1050';
+                }
+            }
+        }
+        if(process=="Intel"){
+            if(model=="i4" || model=="i5"){
+                if(presup > 450000){
+                    if(watts >= 700){
+                        document.getElementById("imag").innerHTML='<img src="../img/3080TI.jpg" id="imagenrecomendacion">te recomendamos la RTX 3080 TI';
+                        
+                    }else if(watts >=600 && watts < 700){
+                        document.getElementById("imag").innerHTML='<img src="../img/3070.jpg" id="imagenrecomendacion">te recomendamos la RTX 3070';
+                    } else if(watts >=500 && watts < 600){ 
+                        document.getElementById("imag").innerHTML='<img src="../img/2060.jpg" id="imagenrecomendacion">te recomendamos la RTX 2060';
+                    } else document.getElementById("imag").innerHTML='<img src="../img/1050.jpg" id="imagenrecomendacion">te recomendamos la GTX 1050';
+                }
+            }
+        }
+        if(process=="AMD"){
+            if(model=="a4" || model=="a5"){
+                if(presup > 450000){
+                    if(watts >= 700){
+                        document.getElementById("imag").innerHTML='<img src="../img/3080TI.jpg" id="imagenrecomendacion">te recomendamos la RTX 3080 TI';
+                        
+                    }else if(watts >=600 && watts < 700){
+                        document.getElementById("imag").innerHTML='<img src="../img/3070.jpg" id="imagenrecomendacion">te recomendamos la RTX 3070';
+                    } else if(watts >=500 && watts < 600){ 
                         document.getElementById("imag").innerHTML='<img src="../img/2060.jpg" id="imagenrecomendacion">te recomendamos la RTX 2060';
                     } else document.getElementById("imag").innerHTML='<img src="../img/1050.jpg" id="imagenrecomendacion">te recomendamos la GTX 1050';
                 }
